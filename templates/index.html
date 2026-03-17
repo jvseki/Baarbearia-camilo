@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lacami Barbearia | Rafael Camilo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -33,20 +34,29 @@
         <div class="mensagem-box">
             <p id="mensagem-dinamica">Carregando...</p>
         </div>
-        <a href="https://wa.me/5518997635638?text=Ol%C3%A1%20Rafael!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="btn btn-whatsapp"> “Gostaria de marcar um Horário” (WhatsApp)</a>
+        
+        <div class="botoes-container">
+            <a href="https://wa.me/5518997635638?text=Ol%C3%A1%20Rafael!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp: Agendar Horário
+            </a>
+        </div>
     </section>
 
     <section class="contato-localizacao">
         <h2>Contato e Localização</h2>
         
-        <div class="links-contato">
-            <a href="mailto:ocamilobarbeiro@gmail.com" class="btn btn-email">📧 ocamilobarbeiro@gmail.com</a>
-            <a href="https://instagram.com/lacamibarbearia" target="_blank" class="btn btn-insta">📷 @lacamibarbearia</a>
+        <div class="botoes-container">
+            <a href="https://instagram.com/lacamibarbearia" target="_blank" class="btn btn-insta">
+                <i class="fab fa-instagram"></i> Instagram (@lacamibarbearia)
+            </a>
+            <a href="mailto:ocamilobarbeiro@gmail.com" class="btn btn-email">
+                <i class="far fa-envelope"></i> E-mail: Contato Profissional
+            </a>
         </div>
 
         <div class="mapa-container">
             <h3>Nossa Barbearia</h3>
-            <p>Rua José Bonifácio, 2304, Benfica, Andradina SP, 16900-008</p>
+            <p>Rua José Bonifácio, 2304, Benfica, Andradina SP</p>
             <iframe src="https://maps.google.com/maps?q=Rua%20Jos%C3%A9%20Bonif%C3%A1cio,%202304,%20Benfica,%20Andradina%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius: 10px; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
