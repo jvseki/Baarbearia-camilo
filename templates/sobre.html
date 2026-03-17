@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Rafael Camilo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navegacao-voltar">
+        <a href="{{ url_for('index') }}" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar</a>
+    </nav>
+
+    <section class="sobre-mim-interna">
+        <div class="foto-perfil">
+            <img src="{{ url_for('static', filename='img/rafael_perfil.jpg') }}" alt="Rafael Camilo - Barbeiro">
+        </div>
+        <div class="texto-sobre">
+            <h2>Rafael Camilo</h2>
+            <p>Há 4 anos transformando o visual e elevando a autoestima dos meus clientes. Com formação pela renomada <strong>Barber Day University</strong>, trago para a cadeira técnicas avançadas e um atendimento de excelência.</p>
+            <p>Se você gosta de manter o padrão lá em cima e valoriza um corte bem feito, está no lugar certo.</p>
+        </div>
+        
+        <div class="botoes-container">
+            <a href="mailto:ocamilobarbeiro@gmail.com" class="btn btn-email">
+                <i class="far fa-envelope"></i> ocamilobarbeiro@gmail.com
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -3,14 +3,16 @@
     --fundo-secao: #141414;
     --texto-claro: #e0e0e0;
     --destaque-dourado: #c5a059;
-    
-   
     --cor-whatsapp: #25D366;
     --cor-insta: #D82D7E;
     --cor-email: #2a2a2a;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -40,71 +42,47 @@ header h1 {
     letter-spacing: 2px;
 }
 
-section { padding: 50px 20px; }
-
-.sobre-mim {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+section {
+    padding: 50px 20px;
 }
 
-.foto-perfil img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.texto-sobre {
-    flex: 1;
-    min-width: 300px;
-    text-align: left;
-}
-
-.texto-sobre h2, .avisos h2, .contato-localizacao h2 {
-    color: var(--destaque-dourado);
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-}
-
-.avisos { background-color: var(--fundo-secao); }
-
-.mensagem-box {
-    background-color: var(--fundo-principal);
-    border-left: 4px solid var(--destaque-dourado);
+.navegacao-voltar {
     padding: 20px;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    border-radius: 0 10px 10px 0;
-    font-size: 1.1rem;
     text-align: left;
 }
 
+.btn-voltar {
+    color: var(--destaque-dourado);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
 
+.btn-voltar:hover {
+    color: #fff;
+}
 
 .botoes-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
     width: 100%;
-    max-width: 500px; 
-    margin: 0 auto 30px auto;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; 
-    width: 100%; 
+    gap: 10px;
+    width: 100%;
     padding: 18px 20px;
     text-decoration: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     font-weight: 600;
     font-size: 1.1rem;
     color: #ffffff;
@@ -117,27 +95,65 @@ section { padding: 50px 20px; }
     opacity: 0.9;
 }
 
-
-.btn i {
-    font-size: 1.3rem;
+.btn-whatsapp {
+    background-color: var(--cor-whatsapp);
 }
 
-
-.btn-whatsapp { 
-    background-color: var(--cor-whatsapp); 
+.btn-insta {
+    background-color: var(--cor-insta);
 }
 
-.btn-insta { 
-    background-color: var(--cor-insta); 
-}
-
-.btn-email { 
-    background-color: var(--cor-email); 
+.btn-email {
+    background-color: var(--cor-email);
     border: 1px solid #444;
-    color: var(--destaque-dourado); 
+    color: var(--destaque-dourado);
 }
 
+.btn-secundario {
+    background-color: var(--fundo-secao);
+    border: 1px solid var(--destaque-dourado);
+    color: var(--texto-claro);
+}
 
+.btn-secundario:hover {
+    background-color: var(--destaque-dourado);
+    color: var(--fundo-principal);
+}
+
+.mensagem-box {
+    background-color: var(--fundo-secao);
+    border-left: 4px solid var(--destaque-dourado);
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    border-radius: 0 15px 15px 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.sobre-mim-interna {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.foto-perfil img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--destaque-dourado);
+}
+
+.texto-sobre h2, .avisos h2, .contato-localizacao h2 {
+    color: var(--destaque-dourado);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
 
 .mapa-container {
     max-width: 800px;
@@ -145,12 +161,19 @@ section { padding: 50px 20px; }
 }
 
 footer {
-    padding: 30px;
+    padding: 40px 20px;
     font-size: 0.85rem;
     color: #666;
 }
 
 @media (max-width: 768px) {
-    .texto-sobre { text-align: center; }
-    .btn { font-size: 1rem; padding: 16px; }
+    .btn {
+        font-size: 1rem;
+        padding: 16px;
+    }
+    
+    .foto-perfil img {
+        width: 200px;
+        height: 200px;
+    }
 }

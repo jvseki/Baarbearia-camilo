@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Barbearia - Lacami</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navegacao-voltar">
+        <a href="{{ url_for('index') }}" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar</a>
+    </nav>
+
+    <header>
+        <img src="{{ url_for('static', filename='img/logo_lacami.jpg') }}" alt="Logo Lacami Barbearia" class="logo">
+        <h1>Lacami Barbearia</h1>
+    </header>
+
+    <section class="avisos">
+        <h2>Recado da Semana</h2>
+        <div class="mensagem-box">
+            <p id="mensagem-dinamica">Carregando...</p>
+        </div>
+    </section>
+
+    <section class="contato-localizacao">
+        <h2>Nossa Localização</h2>
+        <div class="mapa-container">
+            <p>Rua José Bonifácio, 2304, Benfica, Andradina SP</p>
+            <iframe src="https://maps.google.com/maps?q=Rua%20Jos%C3%A9%20Bonif%C3%A1cio,%202304,%20Benfica,%20Andradina%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius: 10px; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
