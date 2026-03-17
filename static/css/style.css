@@ -1,0 +1,128 @@
+:root {
+    --fundo-principal: #0a0a0a;
+    --fundo-secao: #141414;
+    --texto-claro: #e0e0e0;
+    --destaque-dourado: #c5a059; /* Dourado mais elegante e sóbrio */
+    --cor-whatsapp: linear-gradient(45deg, #25D366, #128C7E);
+    --cor-insta: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo-principal);
+    color: var(--texto-claro);
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: var(--fundo-secao);
+    padding: 50px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.logo {
+    max-width: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid var(--destaque-dourado);
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
+}
+
+header h1 {
+    color: var(--texto-claro);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section { padding: 60px 20px; }
+
+/* Sobre o Rafael */
+.sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.foto-perfil img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+}
+
+.texto-sobre {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.texto-sobre h2, .avisos h2, .contato-localizacao h2 {
+    color: var(--destaque-dourado);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Quadro de Avisos */
+.avisos { background-color: var(--fundo-secao); }
+
+.mensagem-box {
+    background-color: var(--fundo-principal);
+    border-left: 4px solid var(--destaque-dourado);
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    border-radius: 0 15px 15px 0;
+    font-style: italic;
+    font-size: 1.15rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Botões Premium */
+.btn {
+    display: inline-block;
+    padding: 16px 35px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px; /* Botão estilo pílula */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Levanta o botão */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    opacity: 0.9;
+}
+
+.btn-whatsapp { background: var(--cor-whatsapp); color: white; }
+.btn-email { background-color: #2a2a2a; color: white; border: 1px solid #444; }
+.btn-insta { background: var(--cor-insta); color: white; }
+
+.mapa-container iframe {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+footer {
+    padding: 30px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .texto-sobre { text-align: center; }
+    .btn { display: block; width: 100%; margin: 15px 0; }
+}
